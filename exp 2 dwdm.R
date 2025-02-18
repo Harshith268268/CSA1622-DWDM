@@ -2,13 +2,10 @@
 age_values <- c(13, 15, 16, 16, 19, 20, 20, 21, 22, 22, 25, 25, 25, 25, 
                 30, 33, 33, 35, 35, 35, 35, 36, 40, 45, 46, 52, 70)
 
-
-mean_value <- mean(age_values)  # Mean
-median_value <- median(age_values)  # Median
-
+mean_value <- mean(age_values) 
+median_value <- median(age_values) 
 
 mode_value <- names(which.max(table(age_values)))
-
 
 mode_counts <- table(age_values)
 modal_values <- as.numeric(names(mode_counts[mode_counts == max(mode_counts)])) 
